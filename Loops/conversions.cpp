@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-// Binary to Decimal Conversions
+// Decimal to Binary Conversions
 void WhileBinary(){
     int num;
-    cout <<"Enter a number: ";
+    cout <<"Enter a Decimal num: ";
     cin >>num;
     int rem,ans=0,mul=1;
     while(num>0){
@@ -17,7 +17,7 @@ void WhileBinary(){
 }
 void ForBinary(){
     int num;
-    cout<<"Enter a number: ";
+    cout<<"Enter a Decimal num: ";
     cin>>num;
     int rem,ans=0,mul=1;
     for(num;num>0;num=num/2){
@@ -28,7 +28,7 @@ void ForBinary(){
     cout<<ans;
 }
 
-//Decimal to Binary Conversions
+//Binary to Decimal Conversions
 void WhileDecimal(){
     int num;
     cout<<"Enter a binary num: ";
@@ -40,7 +40,7 @@ void WhileDecimal(){
         ans+=rem*mul;
         mul*=2;
     }
-    cout<<ans;
+    cout<<"Decimal:" << ans;
 }
 void ForDecimal(){
     int num;
@@ -53,13 +53,47 @@ void ForDecimal(){
         ans+=rem*mul;
         mul*=2;
     }
-    cout<<ans<<endl;
+    cout<<"Decimal: "<<ans<<endl;
 }
 
+//Octal Conversion
 
-
+void DecimalToOctal(){
+    int num;
+    cout<<"Enter a decimal num: ";
+    cin>>num;
+    int rem,ans=0,mul=1;
+    for(num;num>0;num/=8){
+        rem=num%8;
+        ans+=rem*mul;
+        mul*=10;
+    }
+    cout <<"Octal: "<< ans;
+}
+void BinaryToOctal(){
+    //binary to decimal
+    int num;
+    cout<<"Enter a number: ";
+    cin>>num;
+    int rem,ans=0,mul=1;
+    for(num;num>0;num/=10){
+        rem=num%10;
+        ans+=rem*mul;
+        mul*=2;
+    }
+    //decimal to octal
+    //int num2=ans;
+    int rem2,mul2=1;
+    int result=0;
+    for(ans;ans>0;ans/=8){
+        rem2=ans%8;
+        result+=rem2*mul2;
+        mul2*=10;
+    }
+    cout<<"octal: "<<result;
+}
 
 int main(){
-    ForBinary();
+    BinaryToOctal();
     return 0;
 }
