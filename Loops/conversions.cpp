@@ -94,6 +94,6 @@ void BinaryToOctal(){
 }
 
 int main(){
-    BinaryToOctal();
+    WhileBinary();
     return 0;
 }
