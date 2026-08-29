@@ -261,22 +261,9 @@ void diamond(){
     }
 }
 
-void binary(){
-    int num;
-    cout<<"Enter a number: ";
-    cin>>num;
-    int rem,ans=0,mul=1;
-    for(num;num>0;num=num/2){
-        rem=num%2;
-        ans+=rem*mul;
-        mul*=10;
-    }
-    cout<<ans;
-}
 
 int main(){
-    binary();
-    //Fibonacci();
+    Fibonacci();
     //sumOfcube();
     //printTable();
     //singularTable();
