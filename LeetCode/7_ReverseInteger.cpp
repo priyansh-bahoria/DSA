@@ -10,13 +10,13 @@ int reverse(int x){
         if(ans>INT_MAX/10 || ans<INT_MIN/10) cout << "Not Computable!";
         ans=ans*10+rem; // integer overload
     }
-    cout<<ans;
+    return ans;
 }
 
 int main(){
     int num;
     cout<<"number: ";
     cin>>num;
-    reverse(num);
+    cout << reverse(num);
     return 0;
 }
