@@ -2,7 +2,9 @@
 using namespace std;
 
 int BitwiseComplement(int n){
+    
     int rem,ans=0,mul=1;
+
     if (n==0){
         return 1;
     }
