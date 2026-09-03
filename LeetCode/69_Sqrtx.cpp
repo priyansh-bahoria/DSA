@@ -1,15 +1,15 @@
-// Question number 69 of leetcode
 #include <iostream>
 using namespace std;
 
-void Sqrt(int num){
+int Sqrt(int num){
     int high=num;
     int low=1;
     int mid;
     while(low<=high){
-        mid=(low+high)/2;
-        int val=mid*mid;
-        if(val<=num){
+        // For preventing overflow in high + low
+        mid=low+(high-low)/2;
+        // for preventing overflow in mid*mid
+        if(mid<=num/mid){
             low=mid+1;
         }
         else{
