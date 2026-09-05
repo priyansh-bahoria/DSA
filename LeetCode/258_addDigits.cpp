@@ -1,8 +1,9 @@
-//add two digits together 
-// 38 --> 11 --> 2(output)
+// Difficulty: Easy
 #include <iostream>
 using namespace std;
 
+//add two digits together 
+// 38 --> 11 --> 2(output)
 int addDigits(int num){
     while(num>9)
     {
