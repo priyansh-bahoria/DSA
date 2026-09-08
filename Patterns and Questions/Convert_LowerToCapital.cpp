@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Convert a lower alphabet into a Capital alphabet. 
+// Question: Convert a lower alphabet into a Capital alphabet. 
 char convert(char name){
     char ans= name-'a'+'A';
     return ans;

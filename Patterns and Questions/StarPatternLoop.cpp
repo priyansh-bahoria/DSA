@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// Question: Printing Star in different patterns!
 
 void num_pyramid(){
     int row,col,n;

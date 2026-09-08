@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// Question: convertion of numbers as mentioned
+
 // Decimal to Binary Conversions
 void WhileBinary(){
     int num;
