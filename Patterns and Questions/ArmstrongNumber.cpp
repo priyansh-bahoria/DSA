@@ -2,6 +2,8 @@
 #include <cmath>
 using namespace std;
 
+// Question : Finding Armstrong number 
+
 int count (int n){
     int count=0;
     while(n){
