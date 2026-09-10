@@ -2,7 +2,10 @@
 #include <iostream>
 using namespace std;
 
-// Game of number, each player can only move 1-3 at a time and 
+// Number Game
+// Each player can only move 1-3 at a time.
+// last person wins.
+
 bool canWinNim(int n){
     if(n%4==0) return false;
     else return true;
