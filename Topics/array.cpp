@@ -12,6 +12,7 @@ void array(){
     cout << endl;
 }
 
+// finding the maximum element in the array
 int MaxElement(){
     int arr[5]={154,6969,4,1,5};
     int ans = arr[0];
@@ -24,6 +25,7 @@ int MaxElement(){
     return ans;
 }
 
+// finding the minimum element in the array
 int MinElement(){
     int arr[]={154,6969,4,1,5};
     int ans = arr[0];
@@ -38,6 +40,7 @@ int MinElement(){
     return ans;
 }
 
+// Search an element in the array
 int SearchElem(){
     int n;
     cin>>n;
@@ -54,10 +57,18 @@ int SearchElem(){
     return ans;
 }
 
+// reverse an array
 void revArray(){
-    int arr[]={1,2,3,4,5,6,7};
+    int arr[]={1,2,3,4,5,45,78,45,96,15,24,64,82,4598};
     int size = sizeof(arr)/sizeof(arr[0]);
-    for (int i=size-1;i>=0;i--)
+    int start=0;
+    int end = size-1;
+    while (start<end){
+        swap(arr[start],arr[end]);
+        end--;
+        start++;
+    }
+    for (int i=0;i<size;i++)
     {
         cout << arr[i]<<" ";
     }
