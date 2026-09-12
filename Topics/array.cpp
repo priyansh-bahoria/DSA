@@ -1,4 +1,5 @@
 #include <iostream>
+#include <climits>
 using namespace std;
 
 // for me to experiment dif things
@@ -74,7 +75,37 @@ void revArray(){
     }
 }
 
-int main()
-{
-    revArray();
+// finding the second maximum elem in the array.
+int secMax(){
+    int max=INT_MIN;
+    int arr[]={10,10,10};
+    int size =sizeof(arr)/sizeof(arr[0]);
+    for (int i=0;i<size;i++){
+        if(arr[i]>max){
+            max=arr[i];
+        }
+    }
+    int result=-1;
+    for (int i=0;i<size;i++){
+        if (arr[i]>result && arr[i]<max){
+            result=arr[i];
+        }
+    }
+    return result;
+}
+
+// Finding the second minimum elem in the array
+int secMin(){
+    int min=INT_MAX;
+    int arr[]={1,2,3,5,6,7,8,9,10};
+    int size =sizeof(arr)/sizeof(arr[0]);
+    for (int i=0;i<size;i++){
+        if (arr[i]<min){
+            min = arr[i];
+        }
+    }
+}
+
+int main(){
+    cout<<secMax();
 }
