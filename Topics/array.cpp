@@ -106,6 +106,7 @@ int secMin(){
     }
 }
 
+//n is given and it'll tell the missing number
 int MissingElem(){
     int arr[]={1};
     int n = sizeof(arr)/sizeof(arr[0]);
