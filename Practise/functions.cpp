@@ -32,11 +32,11 @@ int sum(int x, int y)
 }
 
 int main(){
-    int num,num1;
+    int num;
     cout<<"Enter a number: ";
     cin>>num;
     //cout << prime(num);
-    //cout << factorial(num);
+    cout << factorial(num);
     
 
     //cout<<"Enter a numbers: ";
