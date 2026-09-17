@@ -31,6 +31,26 @@ int sum(int x, int y)
     return ans;
 }
 
+int Naturalsum(int n){
+    int ans = n*(n+1)/2;
+    return ans;
+}
+
+int NaturalsumCube(int n){
+    int ans= (n*(n+1)/2)*(n*(n+1)/2);
+    return ans;
+}
+
+int GCD(int a, int b){
+    while(a>0 && b>0){
+        if (a>b) a=a%b;
+        else b=b%a;
+
+    }
+    if (a==0) return b;
+    else return a;
+}
+
 int main(){
     int num;
     cout<<"Enter a number: ";
