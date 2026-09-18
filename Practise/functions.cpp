@@ -1,5 +1,6 @@
 // we use function so that the code's readability and reuseablity can be increased.
 #include <iostream>
+#include <vector>
 using namespace std;
 
 //bool prime (int n=3) now this has become a default parameter 
@@ -51,15 +52,22 @@ int GCD(int a, int b){
     else return a;
 }
 
-int main(){
-    int num;
-    cout<<"Enter a number: ";
-    cin>>num;
-    //cout << prime(num);
-    cout << factorial(num);
-    
+int MissingNum(){
+    int arr[]={1,2,3,5,6};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    int sumA=0;
+    for(int i=0;i<n-1;i++){
+        sumA+=arr[i];
+    }
+    cout << sumA << endl;
+    int sumN = n*(n+1)/2;
+    cout << sumN << endl;
+    int result = sumN-sumA;
 
-    //cout<<"Enter a numbers: ";
-    //cin>>num>>num1;
-    //cout << sum(num,num1);
+    return result;
+}
+
+int main(){
+
+    cout<<MissingNum();
 }
