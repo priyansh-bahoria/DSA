@@ -56,16 +56,43 @@ int MissingNum(){
     int arr[]={1,2,3,5,6};
     int n = sizeof(arr)/sizeof(arr[0]);
     int sumA=0;
-    for(int i=0;i<n-1;i++){
+    for(int i=0;i<n-1;i++)
+    {
         sumA+=arr[i];
     }
+    cout<<sumA<<endl;
     int sumN = n*(n+1)/2;
+    cout<<sumN<<endl;
     int result = sumN-sumA;
 
     return result;
 }
 
-int main(){
+int FibonacciSeries(int n){
+    int arr[n];
+    // arr[0]=0;
+    // arr[1]=1;
+    //cout<<arr[0]<<" "<<arr[1]<<" ";
+    int i;
+    for(i=0;i<2;i++){
+        if(i=0){
+            
+        }
+        else{
+            cout<<1<<" ";
+        }
+    }
+    for(i=2;i<n;i++){
+        arr[i]=arr[i-1]+arr[i-2];
+        cout<<arr[i]<<" ";
+    }
+    // cout<<arr[n-1];
+    
 
-    cout<<MissingNum();
+}
+
+int main(){
+    int num;
+    cin>>num;
+    FibonacciSeries(num);
 }
