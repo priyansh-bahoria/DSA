@@ -79,11 +79,24 @@ int FibonacciSeries(int n){
 }
 
 void rotate(){
-     
+    int arr[]={48,56,89,12,36};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    int temp = arr[n-1];
+
+    for (int i=n-2;i>=0;i--){
+        arr[i+1]=arr[i];
+    }
+    arr[0]=temp;
+    
+    for(int i=0; i<n; i++){
+        cout << arr[i]<<" ";
+    }
+
 }
 
 int main(){
-    int num;
-    cin>>num;
-    cout << FibonacciSeries(num);
+    // int num;
+    // cin>>num;
+    // cout << FibonacciSeries(num);
+    rotate();
 }
