@@ -69,30 +69,21 @@ int MissingNum(){
 }
 
 int FibonacciSeries(int n){
-    int arr[n];
-    // arr[0]=0;
-    // arr[1]=1;
-    //cout<<arr[0]<<" "<<arr[1]<<" ";
-    int i;
-    for(i=0;i<2;i++){
-        if(i=0){
-            
-        }
-        else{
-            cout<<1<<" ";
-        }
-    }
-    for(i=2;i<n;i++){
+    int arr[1000];
+    arr[0]=0;
+    arr[1]=1;
+    for (int i=2;i<=n-1;i++){
         arr[i]=arr[i-1]+arr[i-2];
-        cout<<arr[i]<<" ";
     }
-    // cout<<arr[n-1];
-    
+    return arr[n-1];
+}
 
+void rotate(){
+     
 }
 
 int main(){
     int num;
     cin>>num;
-    FibonacciSeries(num);
+    cout << FibonacciSeries(num);
 }
