@@ -78,11 +78,9 @@ int FibonacciSeries(int n){
     return arr[n-1];
 }
 
-void rotate(){
-    int arr[]={48,56,89,12,36};
-    int n = sizeof(arr)/sizeof(arr[0]);
+void rotate(int arr[],int n){
     int temp = arr[n-1];
-
+    
     for (int i=n-2;i>=0;i--){
         arr[i+1]=arr[i];
     }
@@ -91,12 +89,14 @@ void rotate(){
     for(int i=0; i<n; i++){
         cout << arr[i]<<" ";
     }
-
+    
 }
 
 int main(){
     // int num;
     // cin>>num;
     // cout << FibonacciSeries(num);
-    rotate();
+    int arr[]={48,56,89,12,36};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    rotate(arr,n);
 }
