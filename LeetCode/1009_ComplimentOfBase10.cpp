@@ -4,7 +4,9 @@ using namespace std;
 
 int BitwiseComplement(int n){
     
-    int rem,ans=0,mul=1;
+    int rem;
+    int ans=0;
+    int mul=1;
 
     if (n==0){
         return 1;
