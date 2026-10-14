@@ -93,10 +93,6 @@ void rotate(int arr[],int n){
 }
 
 int main(){
-    // int num;
-    // cin>>num;
-    // cout << FibonacciSeries(num);
-    int arr[]={48,56,89,12,36};
-    int n = sizeof(arr)/sizeof(arr[0]);
-    rotate(arr,n);
+    int num,num1;
+    cin>>num>>num1;
 }
