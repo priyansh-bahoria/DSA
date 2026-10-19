@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// it starts from the front of the array
 void SelectionInc(){
     int arr[1000];
     int n;
@@ -26,6 +27,7 @@ void SelectionInc(){
 
 }
 
+// it starts from the back of the array
 void SelectionDec(){
     int arr[1000];
     int index;
